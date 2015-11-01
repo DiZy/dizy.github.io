@@ -1,0 +1,43 @@
+.center{
+	text-align: center;
+}
+.jumbotron{
+	background: url('../images/bg2.jpeg');
+	background-size:100%;
+	background-repeat: no-repeat;
+	color:white;
+	opacity:0.9;
+	margin-bottom:0;
+}
+@media(min-width:1000px) {
+	.jumbotron{
+		min-height:100vh;
+	}
+}
+#box{
+	display:inline-block;
+	margin: 4rem;
+}
+.navbar{
+	background:transparent;
+}
+.panel-title{
+	text-align: center;
+}
+.panel-body{
+	min-height:20rem;
+}
+.skills-panel{
+	min-height:22rem;
+}
+@media(min-width: 1000px){
+	.left-skills-col{
+		padding-right:0;
+	}
+	.right-skills-col{
+		padding-left:0;
+	}
+	.no-right-border{
+		border-right:0;
+	}
+}
