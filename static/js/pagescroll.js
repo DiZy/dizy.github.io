@@ -24,3 +24,14 @@ $(function() {
 $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
+
+$('.navbar-toggle:visible').click(function() {
+	console.log("navbar clicked");
+    setTimeout(function(){
+    	if($(".navbar-collapse").attr("aria-expanded") == "true"){
+	    	$(".navbar-default").addClass("navbar-dark");
+	    }else{
+	    	$(".navbar-default").removeClass("navbar-dark");
+	    }
+	}, 75);
+});

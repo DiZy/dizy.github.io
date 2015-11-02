@@ -21,6 +21,9 @@
 .navbar-transparent{
 	background:transparent;
 }
+.navbar-dark{
+	background:rgb(51, 51, 51);
+}
 .panel-title{
 	text-align: center;
 }
