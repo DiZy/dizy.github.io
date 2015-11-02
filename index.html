@@ -325,7 +325,9 @@
 function loadSlider(){
 	setTimeout(function(){
 	  	$('.flexslider').flexslider({
-	    	animation: "slide"
+	    	animation: "slide",
+	    	randomize: "false",
+	    	initDelay: 999999999
 	  	});
 	    $(window).trigger('resize');
 	}, 100)
