@@ -24,13 +24,13 @@
 .panel-title{
 	text-align: center;
 }
-.panel-body{
-	min-height:20rem;
-}
-.skills-panel{
-	min-height:22rem;
-}
 @media(min-width: 1000px){
+	.panel-body{
+		min-height:20rem;
+	}
+	.skills-panel{
+		min-height:22rem;
+	}
 	.left-skills-col{
 		padding-right:0;
 	}
@@ -40,4 +40,7 @@
 	.no-right-border{
 		border-right:0;
 	}
+}
+ul{
+	margin-bottom:0;
 }
