@@ -44,3 +44,9 @@
 ul{
 	margin-bottom:0;
 }
+.picture-button{
+	display: block;
+	width:30%;
+	margin: 0 auto;
+	text-align: center;
+}

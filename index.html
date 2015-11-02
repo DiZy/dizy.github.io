@@ -1,6 +1,7 @@
 <header>
 <title>David Zilburg</title>
 <link rel="stylesheet" type="text/css" href="./static/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="./static/css/flexslider.css">
 <link rel="stylesheet" type="text/css" href="./static/css/custom.css">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -118,6 +119,8 @@
 				  </div>
 				  <div class="panel-body">
 				 	At <a href="https://www.hackerleague.org/hackathons/hackru-fall-2013">hackRU Fall 2013</a>, my team created an android application called Frames, a picture sharing social network which obtains other users' pictures based on location of the user
+				 	<br><br>
+				 	<a class="btn btn-default picture-button" onclick="$('#frames-modal').modal('show');loadSlider();">Pictures</a>
 				  </div>
 				</div>
 			</div>
@@ -150,7 +153,9 @@
 				    <h3 class="panel-title">WearAbouts</h3>
 				  </div>
 				  <div class="panel-body">
-				 	At <a href="https://www.hackerleague.org/hackathons/hackru-fall-2014">hackRU Fall 2014</a>, my team created a mobile application called WearAbouts, in which users can upload pictures of outfits and have other users vote on which they should wear
+				 	At <a href="https://www.hackerleague.org/hackathons/hackru-fall-2014">hackRU Fall 2014</a>, my team created a mobile app called WearAbouts, in which users can upload pictures of outfits and other users vote on which is better
+				 	<!-- <br><br>
+				 	<a class="btn btn-default picture-button" onclick="$('#frames-modal').modal('show');loadSlider();">Pictures</a> -->
 				  </div>
 				</div>
 			</div>
@@ -161,6 +166,8 @@
 				  </div>
 				  <div class="panel-body">
 				  At <a href="http://2015s.pennapps.com/"> PennApps Winter 2015</a>, my team made <a href="http://safelist.herokuapp.com/">Safelist</a>, a web application using the Postmates API to deliver craigslist items in order to distance any communication between buyer and seller
+					<!-- <br> -->
+					<!-- <a class="btn btn-default picture-button">Pictures</a> -->
 				  </div>
 				</div>
 			</div>
@@ -270,8 +277,38 @@
 	</div>
 </section>
 
+
+<!--Modals-->
+<!-- Modal -->
+<div class="modal fade" id="frames-modal" role="dialog">
+ 	<div class="modal-dialog">
+
+  <!-- Modal content-->
+  <div class="modal-content">
+	    <div class="modal-header">
+	      <h4 class="modal-title">Pictures of "Frames"</h4>
+	    </div>
+	    <div class="modal-body">
+	      <div class="flexslider">
+	        <ul class="slides">
+	          <li>
+	            <img src="static/images/frames.png" />
+	          </li>
+	          <li>
+	            <img src="static/images/framespinner.gif" style="width:50%;margin:auto"/>
+	          </li>
+	        </ul>
+	      </div>
+	    </div>
+	</div>
+  
+</div>
+
 <!-- jQuery -->
 <script src="static/js/jquery.js"></script>
+
+<script src="static/js/bootstrap.min.js"></script>
+
 
 <!-- Plugin JavaScript -->
 <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
@@ -281,5 +318,18 @@
 
 <!-- Page Scroll JavaScript -->
 <script src="static/js/pagescroll.js"></script>
+
+<!--photoviewer -->
+<script src="static/js/jquery.flexslider.js"></script>
+<script>
+function loadSlider(){
+	setTimeout(function(){
+	  	$('.flexslider').flexslider({
+	    	animation: "slide"
+	  	});
+	    $(window).trigger('resize');
+	}, 100)
+};
+</script>
 </body>
 
