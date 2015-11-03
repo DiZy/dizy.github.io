@@ -118,9 +118,9 @@
 				    <h3 class="panel-title">Frames</h3>
 				  </div>
 				  <div class="panel-body">
-				 	At <a href="https://www.hackerleague.org/hackathons/hackru-fall-2013">hackRU Fall 2013</a>, my team created an android application called Frames, a picture sharing social network which obtains other users' pictures based on location of the user
+				 	At <a href="https://www.hackerleague.org/hackathons/hackru-fall-2013">hackRU Fall 2013</a>, my team created an android application called Frames, a picture sharing network which obtains other users' pictures based on location of the user
 				 	<br><br>
-				 	<a class="btn btn-default picture-button" onclick="$('#frames-modal').modal('show');loadSlider();">Pictures</a>
+				 	<a class="btn btn-default picture-button" onclick="$('#frames-modal').modal('show');loadSlider();">Details</a>
 				  </div>
 				</div>
 			</div>
@@ -131,6 +131,8 @@
 				  </div>
 				  <div class="panel-body">
 				  	At <a href="http://2014s.pennapps.com/">PennApps Spring 2014</a>, my team made <a href="https://gimmehearts.herokuapp.com">Hearts</a>, a Valentine's Day themed web application made to analyze Facebook conversations to get statistics
+				  	<br><br>
+				 	<a class="btn btn-default picture-button" onclick="$('#hearts-modal').modal('show');loadSlider();">Details</a>
 				  </div>
 				</div>
 			</div>
@@ -141,6 +143,8 @@
 				  </div>
 				  <div class="panel-body">
 				  At <a href="https://www.hackerleague.org/hackathons/hackru-spring-2014">hackRU Spring 2014</a>, I worked with a beginner programmer to create a website called <a href="http://playmusic4me.herokuapp.com/">PlayMusic4Me</a> where people text message in song recommendations
+				  <br><br>
+				  <a class="btn btn-default picture-button" onclick="$('#playmusic4me-modal').modal('show');loadSlider();">Details</a>
 				  </div>
 				</div>
 			</div>
@@ -154,8 +158,8 @@
 				  </div>
 				  <div class="panel-body">
 				 	At <a href="https://www.hackerleague.org/hackathons/hackru-fall-2014">hackRU Fall 2014</a>, my team created a mobile app called WearAbouts, in which users can upload pictures of outfits and other users vote on which is better
-				 	<!-- <br><br>
-				 	<a class="btn btn-default picture-button" onclick="$('#frames-modal').modal('show');loadSlider();">Pictures</a> -->
+				 	<br><br>
+				    <a class="btn btn-default picture-button" onclick="$('#wearabouts-modal').modal('show');loadSlider();">Details</a>
 				  </div>
 				</div>
 			</div>
@@ -166,8 +170,8 @@
 				  </div>
 				  <div class="panel-body">
 				  At <a href="http://2015s.pennapps.com/"> PennApps Winter 2015</a>, my team made <a href="http://safelist.herokuapp.com/">Safelist</a>, a web application using the Postmates API to deliver craigslist items in order to distance any communication between buyer and seller
-					<!-- <br> -->
-					<!-- <a class="btn btn-default picture-button">Pictures</a> -->
+					<br>
+				    <a class="btn btn-default picture-button" onclick="$('#safelist-modal').modal('show');loadSlider();">Details</a>
 				  </div>
 				</div>
 			</div>
@@ -279,30 +283,97 @@
 
 
 <!--Modals-->
-<!-- Modal -->
 <div class="modal fade" id="frames-modal" role="dialog">
  	<div class="modal-dialog">
-
-  <!-- Modal content-->
-  <div class="modal-content">
-	    <div class="modal-header">
-	      <h4 class="modal-title">Pictures of "Frames"</h4>
-	    </div>
-	    <div class="modal-body">
-	      <div class="flexslider">
-	        <ul class="slides">
-	          <li>
-	            <img src="static/images/frames.png" />
-	          </li>
-	          <li>
-	            <img src="static/images/framespinner.gif" style="width:50%;margin:auto"/>
-	          </li>
-	        </ul>
-	      </div>
-	    </div>
+		<div class="modal-content">
+		    <div class="modal-header">
+		      <h4 class="modal-title">Frames</h4>
+		    </div>
+		    <div class="modal-body">
+		      <div class="flexslider">
+		        <ul class="slides">
+		          <li>
+		            <img src="static/images/frames.png" class="pix"/>
+		          </li>
+		        </ul>
+		      </div>
+		    </div>
+		</div>
 	</div>
-  
 </div>
+<div class="modal fade" id="hearts-modal" role="dialog">
+ 	<div class="modal-dialog">
+		<div class="modal-content">
+		    <div class="modal-header">
+		      <h4 class="modal-title">Hearts</h4>
+		    </div>
+		    <div class="modal-body">
+		      <div class="flexslider">
+		        <ul class="slides">
+		          <li>
+		            <img src="static/images/hearts.png" class="pix"/>
+		          </li>
+		        </ul>
+		      </div>
+		    </div>
+		</div>
+	</div>
+</div>
+<div class="modal fade" id="playmusic4me-modal" role="dialog">
+ 	<div class="modal-dialog">
+		<div class="modal-content">
+		    <div class="modal-header">
+		      <h4 class="modal-title">PlayMusic4Me</h4>
+		    </div>
+		    <div class="modal-body">
+		      <div class="flexslider">
+		        <ul class="slides">
+		          <li>
+		            <img src="static/images/playmusic4me.png" />
+		          </li>
+		        </ul>
+		      </div>
+		    </div>
+		</div>
+	</div>
+</div>
+<div class="modal fade" id="wearabouts-modal" role="dialog">
+ 	<div class="modal-dialog">
+		<div class="modal-content">
+		    <div class="modal-header">
+		      <h4 class="modal-title">WearAbouts</h4>
+		    </div>
+		    <div class="modal-body">
+		      <div class="flexslider">
+		        <ul class="slides">
+		          <li>
+		            <img src="" />
+		          </li>
+		        </ul>
+		      </div>
+		    </div>
+		</div>
+	</div>
+</div>
+<div class="modal fade" id="safelist-modal" role="dialog">
+ 	<div class="modal-dialog">
+		<div class="modal-content">
+		    <div class="modal-header">
+		      <h4 class="modal-title">Safelist</h4>
+		    </div>
+		    <div class="modal-body">
+		      <div class="flexslider">
+		        <ul class="slides">
+		          <li>
+		            <img src="" />
+		          </li>
+		        </ul>
+		      </div>
+		    </div>
+		</div>
+	</div>
+</div>
+
 
 <!-- jQuery -->
 <script src="static/js/jquery.js"></script>
@@ -312,6 +383,8 @@
 
 <!-- Plugin JavaScript -->
 <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+<!-- Navbar scroll effect -->
 <script>
 $(window).scroll(function(){
 	if($(window).scrollTop() > 10){
@@ -336,8 +409,8 @@ function loadSlider(){
 	    	initDelay: 999999999
 	  	});
 	    $(window).trigger('resize');
-	}, 100)
-};
+	}, 250);
+}
 </script>
 </body>
 
