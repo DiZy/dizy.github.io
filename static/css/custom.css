@@ -9,7 +9,7 @@
 	opacity:0.9;
 	margin-bottom:0;
 }
-@media(min-width:1000px) {
+@media(min-width:992px) {
 	.jumbotron{
 		min-height:100vh;
 	}
@@ -27,9 +27,9 @@
 .panel-title{
 	text-align: center;
 }
-@media(min-width: 1000px){
+@media(min-width: 992px){
 	.panel-body{
-		min-height:20rem;
+		min-height:22rem;
 	}
 	.skills-panel{
 		min-height:22rem;
