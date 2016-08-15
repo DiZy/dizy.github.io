@@ -31,6 +31,9 @@
 	.panel-body{
 		min-height:22rem;
 	}
+	#work .row:first-of-type .panel-body{
+		min-height:26.2rem;
+	}
 	.skills-panel{
 		min-height:26.2rem;
 	}
@@ -46,6 +49,7 @@
 }
 ul{
 	margin-bottom:0;
+	padding-left:30px;
 }
 .picture-button{
 	display: block;
