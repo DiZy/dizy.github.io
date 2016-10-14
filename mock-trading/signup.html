@@ -1,0 +1,144 @@
+{% extends "base.html" %}
+{% block title %}GET Request{% endblock %}
+{% block content %}
+<div class="col-md-2" id="stock-ticker">
+	<br>
+	<br>
+	<br>
+	<h3 class="center">Previous Features</h3>
+	<div class="line"></div>
+	<div id="current-stock">
+		<img src='/static/images/stock1.png' style='width:100%'><br><br>
+		<h4 class='center green'>30%+ in TWO DAYS</h4>
+	</div>
+	<br>
+	<div class="line"></div>
+</div>
+<div class="container center">
+	<br>
+	<br>
+	<br>
+	<h1>Sign Up</h1>
+	{% if error %}<div id="general-error" class="error">{{error}}</div><br>{% endif %}
+	<div class="error" id='payment-errors'></div>
+	<br>
+	<form id='payment-form' action="/signUp" method="post">
+		<div class="row">
+			<div class="col-md-3">
+			</div>
+			<div class="col-md-1">
+				<h4 class='input-line'>Name</h4>
+			</div>
+			<div class="col-md-4">
+				<input class='input form-control' id="full_name" type='text' name="full_name">
+			</div>
+			<div class="col-md-4">
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-md-3">
+			</div>
+			<div class="col-md-1">
+				<h4 class='input-line'>Username</h4>
+			</div>
+			<div class="col-md-4">
+				<input class='input form-control' type='text' id="username" name="username">
+			</div>
+			<div class="col-md-4">
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-md-3">
+			</div>
+			<div class="col-md-1">
+				<h4 class = 'input-line'>Password</h4>
+			</div>
+			<div class="col-md-4">
+				<input class='input form-control' type='password' name="password">
+			</div>
+			<div class="col-md-4">
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-md-3">
+			</div>
+			<div class="col-md-1">
+				<h4 class = 'input-line'>Confirm</h4>
+			</div>
+			<div class="col-md-4">
+				<input class='input form-control' type='password' name="password_confirm">
+			</div>
+			<div class="col-md-4">
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-md-3">
+			</div>
+			<div class="col-md-1">
+				<h4 class = 'input-line'>Promo</h4>
+			</div>
+			<div class="col-md-4">
+				<input class='input form-control' type='text' name="promo">
+			</div>
+			<div class="col-md-4">
+			</div>
+		</div>
+		<br>
+		<div class="row center">
+					<div class="col-md-3">
+					</div>
+					<div class="col-md-1">
+						<h4 class='input-line'>Type</h4>
+					</div>
+					<div class="col-md-4">
+						<select name="mem_type" class="input form-control">
+					        <option value="monthly">Monthly - $19.99</option>
+					        <option value="annual">Annual - $199.99</option>     
+					    </select>
+					    <p>*You will not be charged in the first 30 days if a valid promo code is entered
+					</div>
+					<div class="col-md-4">
+					</div>
+		</div>
+		<br>
+		By registering, you acknowledge the <a href="/terms">disclaimer</a>.
+		<br>
+		<br>
+		<script
+			id="stripe-button"
+			src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+			data-key="pk_live_0pYsesMJSvx2Ee2f47derBXp"
+			data-name="Subscribe to TradeWhat"
+			data-description="Powered by Stripe"
+			data-allow-remember-me="false">
+		</script>
+	</form>
+</div>
+<script>
+if("{{username}}" != ""){
+	$('#username').val("{{username}}");
+}
+if("{{full_name}}" != ""){
+	$('#full_name').val("{{full_name}}");
+}
+</script>
+<script>
+	var prevStocks = [
+	    "<img src='/static/images/stock1.png' style='width:100%'><br><br><h4 class='center green'>30%+ in TWO DAYS</h4>",
+	    "<img src='/static/images/stock2.png' style='width:100%'><br><br><h4 class='center green'>15%+ Breakout Setup</h4>"
+	];
+
+	// get a random index, get the value from array and
+	// change the div content
+	var i = 0
+	setInterval(function() {
+	  	i++
+	    if (i == prevStocks.length) i=0;
+	    $("#current-stock").html(prevStocks[i]);
+	}, 5 * 1000);
+</script>
+{% endblock %}

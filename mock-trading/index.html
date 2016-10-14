@@ -1,0 +1,220 @@
+<html>
+<head>
+	<title>Mock TradeSite</title>
+	<link rel="stylesheet" type="text/css" href="static/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="static/css/component.css">
+	<link rel="stylesheet" type="text/css" href="static/css/custom.css">
+	<script src="static/js/jquery.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+	<script src="static/js/bootstrap.min.js"></script>
+	<script src="static/js/custom.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+</head>
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<a href="" class="navbar-brand">TradeSite</a>
+				<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="navbar-collapse collapse" id="navbar-main">
+				<ul class="nav navbar-nav">
+					<li>
+					    <a href="watchlists.html">Watchlists</a>
+					</li>
+					<li>
+					    <a>Contact</a>
+					</li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+					  <a>Sign In</a>
+					</li>
+					<li>
+					  <a>Sign Up</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="container">
+		<section>
+			<div class="cover" style="min-height:70vh">
+				<br>
+				<br>
+				<br>
+				<canvas style="" width="300" height="300" id="background-canvas"></canvas>
+				<h1>TradeSite</h1>
+				<div class="center">
+					<h3>This is a mock template.</h3>
+					<br>
+					<iframe class="youtube" src="https://www.youtube.com/embed/0vrdgDdPApQ" frameborder="0" allowfullscreen></iframe>
+					<br>
+					<br>
+					<a class='btn btn-default btn-lg page-scroll' href="#about">Learn More</a>
+				</div>
+				<br>
+			</div>
+		</section>
+		<div class="line container"></div>
+		<section class="container" id="about">
+			<br><br>
+			<h1>How It Works</h1>
+			<div class="center">
+				<h4>Lorem ipsum dolor sit amet, partem vocibus te sea. Te sea aliquam corrumpit, inani errem nam id. Id vim alterum probatus consequuntur. Eu sea dicat libris erroribus, qualisque maluisset eloquentiam eu quo. Qui commune sapientem id.</h4>
+			</div>
+			<div class="row">
+				<div class="col-md-4 center">
+					<h2>Category 1</h2>
+					<h5 class="col-text">Lorem ipsum dolor sit amet, partem vocibus te sea. Te sea aliquam corrumpit, inani errem nam id. </h5>
+				</div>
+				<div class="col-md-4 center">
+					<h2>Category 2</h2>
+					<h5 class="col-text">Lorem ipsum dolor sit amet, partem vocibus te sea. Te sea aliquam corrumpit, inani errem nam id. </h5>
+				</div>
+				<div class="col-md-4 center">
+					<h2>Category 3</h2>
+					<h5 class="col-text">Lorem ipsum dolor sit amet, partem vocibus te sea. Te sea aliquam corrumpit, inani errem nam id. </h5>
+				</div>
+			</div>
+			<br>
+			<div class="row">
+				<div class="col-md-3"></div>
+				<div class="col-md-6"><div class="line center"></div></div>
+				<div class="col-md-3"></div>
+			</div>
+			<div class="row">
+				<div class='col-md-6' style="height:50%">
+					<br><p >Disclaimer: This is a random stock.</p>
+					<!-- TradingView Widget BEGIN -->
+					<script type="text/javascript" src="https://d33t3vvu2t2yu5.cloudfront.net/tv.js"></script>
+					<script type="text/javascript">
+						new TradingView.widget({
+							"autosize":true,
+							"symbol": "AAPL",
+							"interval": "D",
+							"timezone": "exchange",
+							"theme": "White",
+							"style": "1",
+							"toolbar_bg": ".f1f3f6",
+							"allow_symbol_change": false,
+							"hideideas": true,
+							"studies": [
+							"RSI@tv-basicstudies"
+							],
+							"show_popup_button": true,
+							"popup_width": "1000",
+							"popup_height": "650",
+							"save_image": false
+						});
+					</script>
+					<!-- TradingView Widget END -->
+				</div>
+				<br><br><br>
+				<div class='col-md-6 center'>
+					<h2 class="center">Our Mission</h2>
+					<div class="scroll-text textarea-about">
+						<p style="text-align:left">
+							Lorem ipsum dolor sit amet, partem vocibus te sea. Te sea aliquam corrumpit, inani errem nam id. Id vim alterum probatus consequuntur. Eu sea dicat libris erroribus, qualisque maluisset eloquentiam eu quo. Qui commune sapientem id.
+							<br><br>
+							Cu ius aliquam molestie. Est molestiae signiferumque in, vim errem legimus id, sea no omnes viderer copiosae. Cum ei causae scripta feugait, te eam postea abhorreant. Vide tation sapientem mea ex. Ius an officiis vivendum detraxit. Luptatum dissentiet per ea.
+							<br><br>
+							In his natum delicata adipiscing, congue ornatus et mei. Cum altera doming cu, no qui quis bonorum. Ut zril quaeque est, ea eum nisl dolore eripuit, sit ad aperiam invidunt senserit. In pri quem vidisse iracundia, mei et eripuit definiebas, vix at quaeque assentior definitiones.
+						</p>
+					</div>
+					<a class='btn btn-default btn-lg page-scroll'>Sign Up</a>
+				</div>
+			</div> 
+			<br>
+			<br>
+			<br>
+			<br>
+		</section>
+	</div>
+	<script>
+		var canvas = document.getElementById("background-canvas");
+		var headerWidth = $('.cover').width();
+		var headerHeight = $('.cover').height() - $('nav').height();
+		canvas.width = headerWidth;
+		canvas.height = headerHeight;
+		var context = canvas.getContext("2d","mybackground", headerWidth, headerHeight)
+	//var context = document.getCSSCanvasContext("2d", "mybackground", headerWidth, headerHeight);
+	var fps = 60;
+	var offset = 0;
+
+	function distance(x1, y1, x2, y2) {
+		return Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
+	}
+
+	function drawLine(){
+		//clear the screen
+		context.clearRect(0, 0, headerWidth, headerHeight);
+		
+		context.beginPath();
+		context.moveTo(0, headerHeight);
+		
+		context.lineTo(0.2 * headerWidth, 0.9 * headerHeight);
+		context.lineTo(0.28 * headerWidth, 0.7 * headerHeight);
+		context.lineTo(0.8 * headerWidth, 0.6 * headerHeight);
+		context.lineTo(headerWidth, 0);
+
+		// context.moveTo(pathx[index], pathy[index])
+		// context.lineTo(pathx[index+1], pathy[index+1])
+		context.lineWidth = 5;
+		context.strokeStyle = '#dddddd';
+		context.stroke();
+		
+		//hide part of the line
+		context.clearRect(offset, 0, headerWidth, headerHeight);
+	}
+
+	function update() {
+		if(offset < headerWidth) {
+			offset+=10;
+		}
+	}
+
+	function run() {
+		update();
+		drawLine();
+	}
+
+	function reanimate(){
+		headerWidth = $('.cover').width(); 
+		headerHeight = $('.cover').height() - $('nav').height();
+		canvas.width = headerWidth;
+		canvas.height = headerHeight;
+		context = canvas.getContext("2d","mybackground", headerWidth, headerHeight);
+		offset = 0;
+		setTimeout(function(){
+			_intervalId = setInterval(run, 1000 / fps);
+		}, 750);
+	}
+	$(document).ready(function () {
+		setTimeout(function(){
+			_intervalId = setInterval(run, 1000 / fps);
+		}, 750);
+		$(window).resize(function(){
+			console.log("resized");
+			context.clearRect(0, 0, canvas.width, canvas.height);
+			reanimate();
+		});
+	});
+    //document.body.style.background = "url(" + canvas.toDataURL() + ")";
+</script>
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-63065529-1', 'auto');
+	ga('send', 'pageview');
+
+</script>
+</body>
+</html>
