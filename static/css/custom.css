@@ -9,10 +9,25 @@
 	opacity:0.9;
 	margin-bottom:0;
 }
+#spotify{
+	position:fixed;
+	padding:0;
+	width:100px;
+	top:4;
+	right:6;
+	display:none;
+}
+#spotify img{
+	width:100%;
+}
 @media(min-width:992px) {
 	.jumbotron{
 		min-height:100vh;
 	}
+	#spotify{
+		display:block;
+	}
+
 }
 #box{
 	display:inline-block;
