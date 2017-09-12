@@ -58,10 +58,13 @@
 	.no-right-border{
 		border-right:0;
 	}
+	.skills-panel{
+		min-height:28.4rem;
+	}
 }
 @media(min-width: 992px) and (max-width: 1199px){
 	.skills-panel{
-		min-height:26.2rem;
+		min-height:28.4rem;
 	}
 	#work .row:first-of-type .panel-body{
 		min-height:26.2rem;
